@@ -1,0 +1,20 @@
+# Placeholder ESPHome configuration for the Echo Dot voice satellite.
+# To be filled in once the I2S pinout (docs/pinout.md) is confirmed and
+# the MAX98357A amp wiring is finalized.
+#
+# Planned components:
+#   - esp32 (WROOM-32E)
+#   - i2s_audio (mic in from salvaged Echo Dot array, speaker out via MAX98357A)
+#   - micro_wake_word
+#   - voice_assistant (Wyoming protocol, Home Assistant)
+
+esphome:
+  name: echo-dot-satellite
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# TODO: wifi, api, ota, i2s_audio, microphone, speaker,
+# micro_wake_word, voice_assistant blocks once hardware is wired.
